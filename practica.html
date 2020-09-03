@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+
+<body>
+    <head>
+       <script>
+            $('#tabla tbody tr').each(function(index){
+                $
+                (this).find('td: eq(0)').html(respuesta[index]["nombre"]);
+                $
+                (this).find('td: eq(1)').html(respuesta[index]["edad"]);
+                $
+                (this).find('td: eq(2)').html(respuesta[index]["activo"]);
+                $
+                (this).find('td: eq(3)').html(respuesta[index]["promedio"]);
+             });
+
+             var  cont = 0;
+             function agregar(){
+               cont ++;
+               var fila='<tr class="selected" id="fila' + cont + '"><td>' </td><td>'+cont' </td><td> </td><td> </td><td> </td><td> </td></tr>';
+               $('#tabla').append(fila);
+             }
+
+
+       </script>
+    </head> 
+    <table width = "100%" border="1>
+           <tr>
+               <td colspan="4">
+                    <div aling="center"><strong> Datos </strong></div>
+               </td>
+           </tr> 
+           <tr>
+               <th tabla="#tabla"">#</th>
+       
+       <thead>
+          <tr>
+              <td>#</td>
+              <td>Nombre</td>
+              <td>Edad</td>
+              <td>Activo</td>
+              <td>Promedio</td>
+          </tr>  
+       </tread>       
+    </table>
+</body>
+
